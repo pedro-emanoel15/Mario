@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Bros</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="header">
+    <img src="./img/icon.png" alt="Logo Rosto do Mario" class="imagem-mario" onclick="playAudio4()">
+    <a  onclick="nossosServiços()"">Home</a>
+    <a onclick="nossosServiços()">Nossos Serviços</a>
+    <a href="https://api.whatsapp.com/send?phone=5562993186647&text=Quero%20falar%20com%20o%20Pedro%20sobre%20os%20web%20sites%20e%20op%C3%A7%C3%B5es%20de%20desenvolvimento%20de%20projetos!" onclick="playAudioZap()">Fale Conosco</a>
+  </div>
+  <div class="caixa-mae">
+    <div class="caixa-principal">
+      <img src="./img/logo.png" alt="Logo Mario Bros" class="imagem-logo">
+      <p class="titulo">🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos com Estilo!</p>
+      <p>Vazamentos inesperados, torneiras que não param de pingar? Não se preoucupe porque estamos aqui para salvar o
+        dia!Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!">🔧</p>
+      <button class="contato" onclick="abrirFormulario()">ENTRE EM CONTATO</button>
+
+      <form class="fale-conosco" 
+        action="https://formcarry.com/s/hY0fJEumLoy"
+        method="POST"
+        enctype="multipart/form-data">
+          <input placeholder="Seu Nome" type="text" name="nome">
+          <input placeholder="Seu Telefone" type="tel" name="telefone">
+          <textarea placeholder="Digite o seu problema aqui..." name="dúvida"></textarea>
+          <button class="pedir-orçamento" type="submit" onclick="playAudio3()">PEDIR ORÇAMENTO</button>
+      </form>
+    </div>
+    <div class="caixa-mario">
+      <img src="./img/mario.png" alt="Logo Mario e Luigi" class="imagem-mario-luigi">
+      <a href="https://api.whatsapp.com/send?phone=5562993186647&text=Quero%20falar%20com%20o%20Pedro%20sobre%20os%20web%20sites%20e%20op%C3%A7%C3%B5es%20de%20desenvolvimento%20de%20projetos!"><img src="./img/whatsapp.png" alt="Link Whatsapp" class="whatsapp" onclick="playAudioZap()"></a>
+
+
+    </div>
+  </div>
+  <div class="caixa-video">
+    <video src="./img/video.mp4" autoplay loop muted></video>
+  </div>
+  <div class="mascara"></div>
+  <div class="mascara-formulario" onclick="fecharFormulario()"></div>
+
+  <audio src="./img/mario_coin.mp3" class="audio"></audio>
+  <audio src="./img/pause.mp3" class="audio2"></audio>
+  <audio src="./img/mario_up.mp3" class="audio3"></audio>
+  <audio src="./img/mario.mp3" class="audio4"></audio>
+  <audio src="./img/whatsapp.mp3" class="zap-mp3"></audio>
+</body>
+
+<script src="script.js"></script>
+
+<!--inicio 
+     left: -300px
+     top:30%
+
+  final
+     top: 30%
+     left: 50%
+     transform: translateX(-50%)-->
